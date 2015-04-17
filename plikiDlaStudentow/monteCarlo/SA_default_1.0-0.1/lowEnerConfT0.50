@@ -1,0 +1,21 @@
+COMMENT:	nOfContacts=7
+ATOM      0  CA  LYS   0  A     0.000   0.000   0.000
+ATOM      1  CA  ALA   1  A     1.000   0.000   0.000
+ATOM      2  CA  LYS   2  A     1.000   1.000   0.000
+ATOM      3  CA  LYS   3  A     2.000   1.000   0.000
+ATOM      4  CA  ALA   4  A     2.000   0.000   0.000
+ATOM      5  CA  LYS   5  A     2.000  -1.000   0.000
+ATOM      6  CA  LYS   6  A     3.000  -1.000   0.000
+ATOM      7  CA  ALA   7  A     3.000   0.000   0.000
+ATOM      8  CA  ALA   8  A     3.000   1.000   0.000
+ATOM      9  CA  LYS   9  A     3.000   2.000   0.000
+ATOM     10  CA  LYS  10  A     4.000   2.000   0.000
+ATOM     11  CA  ALA  11  A     4.000   1.000   0.000
+ATOM     12  CA  ALA  12  A     4.000   0.000   0.000
+ATOM     13  CA  LYS  13  A     4.000  -1.000   0.000
+ATOM     14  CA  LYS  14  A     5.000  -1.000   0.000
+ATOM     15  CA  ALA  15  A     5.000   0.000   0.000
+ATOM     16  CA  LYS  16  A     6.000   0.000   0.000
+ATOM     17  CA  LYS  17  A     6.000   1.000   0.000
+ATOM     18  CA  ALA  18  A     5.000   1.000   0.000
+ATOM     19  CA  LYS  19  A     5.000   2.000   0.000

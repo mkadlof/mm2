@@ -1,0 +1,16 @@
+dim: 1
+n_of_steps: 40000
+trajectory_interval: 1
+energy_interval: 1
+coords: coordsLoner.txt
+background: two_wells 5.0 1.0 10.0 2.0
+force_field: vdW 1.0 1.0
+dt: 0.001
+integrator: brown -0.9 300
+
+
+coords: coordsCollision.txt
+background: soft_walls 2.0 2.0
+integrator: langevin 0.00001 300
+integrator: velocity_verlet2
+

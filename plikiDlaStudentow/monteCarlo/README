@@ -1,0 +1,13 @@
+przed rozpoczeciem I programu zaliczeniowego warto pokazac studentom przykladowa trajektorie modelu HP, konczaca sie zwinietym bialkiem (do minimum energetycznego).
+
+uruchamiamy PyMOLa:
+
+pymol trajExample
+
+plik z trajektoria musi byc w standardowym, multi-modelowym formacie PDB (prosze spojrzec na plik, zeby wiedziec, jak powinien wygladac).
+ w PyMOLu uruchamiamy skrypt "pokaz":
+
+run pokaz
+
+co sprawia, ze aminokwasy reprezentowane sa przez kulki.
+w okolicach prawego dolnego rogu PyMOLa jest przycisk PLAY (czyli trojkat).

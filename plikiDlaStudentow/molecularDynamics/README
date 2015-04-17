@@ -1,0 +1,5 @@
+kompilacja:
+	make 
+
+uwagi:
+	w katalogu "przykladowyOutput" znajduja sie pliki z trajektoriami, ktore warto pokazac studentom (w programie VMD)
