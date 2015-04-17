@@ -1,14 +1,14 @@
-Kompilacja:
+kompilacja:
 
 	make -B
 
-Odpalenie:
+odpalenie:
 
 	java Simulation initExample.txt [nazwa_pliku]
 
---	gdzie opcjonalny parametr "nazwa_pliku" jest nazwa pliku wYjsciowego (z trajektoria), lacznie ze sciezka dostepu; 
+gdzie opcjonalny parametr "nazwa_pliku" jest nazwa pliku wYjsciowego (z trajektoria), lacznie ze sciezka dostepu; 
 przykladowo:
 
 	java Simulation initExample.txt ./output/wyjscie.xyz
 
-Jezeli plik wyjsciowy istnieje, zostanie nadpisany; wpp - zostanie utworzony
+jezeli plik wyjsciowy istnieje, zostanie nadpisany; wpp - zostanie utworzony
