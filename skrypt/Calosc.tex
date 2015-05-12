@@ -4,15 +4,13 @@
 \usepackage[polish]{babel}
 \usepackage[T1]{fontenc} %polskie fonty
 \usepackage{graphicx}
-\usepackage{fancyhdr}
+\usepackage{fancyhdr} % headery i footery
 \frenchspacing %likwiduje powiekszone spacje po koncu zdania
 \usepackage{ucs} % co to?
 \usepackage{amsmath} %do wzorow matematycznych
 \usepackage{amsfonts} %---------||--------------
 \usepackage{indentfirst} %wciecie pierwszego akapitu
-\usepackage{eufrak}
-%\usepackage{algorithm}
-%\usepackage{algorithmic}
+\usepackage{fancyhdr}
 \usepackage{clrscode} % jak z Cormena
 
 
@@ -26,16 +24,30 @@
 
 
 \begin{document}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\chaptername{} \thechapter}
+\rhead{\thepage}
+\cfoot{
+\centering
+\includegraphics[width=5in]{stopka_loga_napis}
+}
 \include{tytul}
 
-
 \chapter{Wstęp}
-\pagestyle{headings} % wlacza numerowanie stron
+%\pagestyle{headings} % wlacza numerowanie stron
 Witamy Państwa na ćwiczeniach z~Modelowania Molekularnego 2.\\
 
-Zacznijmy od kwestii formalnych. Skrypt zawiera przede wszystkim opis trzech programów zaliczeniowych. Na ćwiczeniach będą one omawiane i~oceniane. Przystąpienie do egzaminu jest możliwe jedynie po zaliczeniu ćwiczeń. Warunkiem dostatecznym i~koniecznym do uzyskania zaliczenia ćwiczeń jest oddanie samodzielnie napisanych i~działających programów zaliczeniowych, oraz przedstawienie wyników. W~przypadku oddania obydwu programów w~wyznaczonych terminach ocena z~przedmiotu zostaje podniesiona o~pół stopnia (gdy oceną z~egzaminu nie jest ani 2.0, ani 5.0). Można więc uznać, że ocena z~ćwiczeń jest ,,zero-jedynkowa''. Zachęcamy Państwa do podjęcia trudu i~uzyskania z~ćwiczeń ,,jedynki''!\\
+Zacznijmy od kwestii formalnych. Skrypt zawiera przede wszystkim opis trzech programów zaliczeniowych. Na ćwiczeniach będą one omawiane i~oceniane.
+Przystąpienie do egzaminu jest możliwe jedynie po zaliczeniu ćwiczeń. Warunkiem dostatecznym i~koniecznym do uzyskania zaliczenia ćwiczeń jest oddanie samodzielnie napisanych i~działających programów zaliczeniowych, oraz przedstawienie wyników.
+W~przypadku oddania wymaganych programów w~wyznaczonych terminach ocena z~przedmiotu zostaje podniesiona o~pół stopnia (gdy oceną z~egzaminu nie jest ani 2.0, ani 5.0). Można więc uznać, że ocena z~ćwiczeń jest ,,zero-jedynkowa''. Zachęcamy Państwa do podjęcia trudu i~uzyskania z~ćwiczeń ,,jedynki''!\\
 
-Uczestników kursu (czyli głównych odbiorców tego skryptu) cechuje duże zróżnicowanie zarówno pod względem umiejętności programistycznych, jak i~pod względem zrozumienia zagadnień fizycznych. Jednak od wszystkich studentów oczekujemy znajomości podstawowych algorytmów, pojęć programowania obiektowego, jak również znajomości obiektowego języka programowania (w~domyśle Javy). Opracowując programy zaliczeniowe braliśmy pod uwagę osoby, które nie miały jeszcze okazji nabyć swobody w~posługiwaniu się podstawowymi narzędziami programistycznymi i~chcemy zapewnić, że choć przewidziany na ćwiczenia materiał nie należy do najprostszych, to trudności techniczne będzie można pokonać systematyczną pracą i~konsultacjami z~ćwiczeniowcem. \\
+Uczestników kursu (czyli głównych odbiorców tego skryptu) cechuje duże zróżnicowanie zarówno pod względem umiejętności programistycznych, jak i~pod względem zrozumienia zagadnień fizycznych.
+Jednak od wszystkich studentów oczekujemy znajomości podstawowych algorytmów, pojęć programowania obiektowego, jak również znajomości obiektowego języka programowania (Javy, bądź Pythona). Opracowując programy zaliczeniowe braliśmy pod uwagę osoby, które nie miały jeszcze okazji nabyć swobody w~posługiwaniu się podstawowymi narzędziami programistycznymi i~chcemy zapewnić, że choć przewidziany na ćwiczenia materiał nie należy do najprostszych, to trudności techniczne będzie można pokonać systematyczną pracą i~konsultacjami z~ćwiczeniowcem. \\
+
+Skrypt pisany był z myślą o zajęciach prowadzonych przez jeden semestr w wymiarze 60-godzinnym.
+Jeżeli założyć, że studenci rozpoczynający ten kurs znają obiektowy język programowania, 60 godzin ćwiczeń wystarczyć powinno do zrealizowania całego skryptu, czyli trzech programów zaliczeniowych.
+Jednak możliwe jest również przeprowadzenie ćwiczeń w~wymiarze 30-godzinnym~--~wówczas od studentów wymagać można dwóch pierwszych programów, bądź: pierwszego i trzeciego.\\
 
 Na początku zajmiemy się dynamiką molekularną (\emph{Molecular Dynamics,} MD). {\bf Pierwszy program zaliczeniowy} jest implementacją prostej dynamiki molekularnej. Aby uprościć początkowe rozważania ograniczymy się do układu, składającego się z~pojedynczej cząstki, z~opisem 1-wymiarowym. Cząstka uwięziona będzie w~studni z~dwoma minimami, z~barierą między nimi. Na takim układzie będziemy testować różne algorytmy całkujące (Verlet, Velocity Verlet, Leapfrog i~Beeman). Będzie to układ modelowy, który będziemy w~trakcie ćwiczeń rozwijać, umożliwiając zastosowanie:
 \begin{packed_enum}
